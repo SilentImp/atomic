@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+  </head>
+  <body>
+    <style>
+      header {
+        display: flex;
+        justify-content: end;
+        padding: 1rem;
+        background-color: #f0f0f0;
+      }
+
+      .login-form-button {
+        anchor-name: --login-button;
+      }
+
+      form {
+        border-width: 1px;
+        padding: 1rem;
+        
+        position-anchor: --login-button;
+        position-area: block-end span-inline-end;
+        position-try-fallbacks: block-end span-inline-start;
+        position: absolute;
+        margin: 0;
+      }
+
+      label {
+        display: flex;
+        justify-content: space-between;
+        margin-block-end: 1rem;
+      }
+
+      input {
+        margin-inline-start: .5rem;
+      }
+    </style>
+    <header>
+      <button class="login-form-button" type="button" command="toggle-popover" commandfor="login-form">login</button>
+      <form id="login-form" popover action="/login" method="post">
+        <label for="email">
+          Email
+          <input type="email" name="email" placeholder="email@gmail.com" autocomplete="email username">
+        </label>
+        <label for="email">
+          Password
+          <input type="password" name="password" placeholder="Eagle" autocomplete="current-password">
+        </label>
+        <button type="button">Login</button>
+      </form>
+    </header>
+  </body>
+</html>
