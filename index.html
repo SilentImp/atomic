@@ -1,0 +1,1426 @@
+<!DOCTYPE html>
+<html lang="en" id="page">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Presentation description" />
+
+    <link rel="stylesheet" href="styles/SlideController.css" />
+    <link rel="stylesheet" href="talk/styles.css" />
+
+    <title>You don't git it!</title>
+  </head>
+  <body>
+    <main role="list">
+
+      <ex-illustration
+        data-no-page
+        data-restart
+        data-cover
+        data-src="images/meow.gif"
+        data-alt="Meowth"
+        role="listitem"
+      >
+        <ex-cloud
+          data-bgcolor="#eae1ee"
+          data-tail-size="2rem"
+          data-angle="-60deg"
+          data-size="48px"
+          data-left="-300px"
+          data-top="-140px"
+        >you<br>don't<br>git it!</ex-cloud>
+        <ex-cloud
+        data-bgcolor="#eae1ee"
+        data-tail-size="2rem"
+        data-angle="60deg"
+        data-size="48px"
+        data-left="335px"
+        data-top="-140px"
+      >I want<br>you to<br>git gud!</ex-cloud>
+      </ex-illustration>
+
+      <ex-illustration
+        data-no-page
+        data-restart
+        data-cover
+        data-src="images/new.gif"
+        data-alt="Meowth"
+        role="listitem"
+      >
+      <ex-cloud
+        data-bgcolor="#eae1ee"
+        data-tail-size="2rem"
+        data-angle="-80deg"
+        data-size="42px"
+        data-left="-300px"
+        data-top="20px"
+      >Please<br>allow me to<br>introduce<br>myself</ex-cloud>
+      </ex-illustration>
+
+      <ex-illustration
+        data-no-page
+        data-restart
+        data-cover
+        data-src="images/new.gif"
+        data-alt="Meowth"
+        role="listitem"
+      >
+      <ex-cloud
+        data-bgcolor="#eae1ee"
+        data-tail-size="2rem"
+        data-angle="-80deg"
+        data-size="42px"
+        data-left="-280px"
+        data-top="20px"
+      >I'm a<br>Meowth<br>of wealth<br>and taste</ex-cloud>
+      </ex-illustration>
+
+      <ex-illustration
+        data-no-page
+        data-restart
+        data-cover
+        data-src="images/new.gif"
+        data-alt="Meowth"
+        role="listitem"
+      >
+      
+      <ex-cloud
+        data-bgcolor="#eae1ee"
+        data-tail-size="2rem"
+        data-angle="-80deg"
+        data-size="42px"
+        data-left="-300px"
+        data-top="20px"
+      >I've been<br>around<br>for a long,<br>long year</ex-cloud>
+      </ex-illustration>
+
+      <ex-illustration
+        data-no-page
+        data-restart
+        data-cover
+        data-src="images/new.gif"
+        data-alt="Meowth"
+        role="listitem"
+      >
+      
+      <ex-cloud
+        data-bgcolor="#eae1ee"
+        data-tail-size="2rem"
+        data-angle="-80deg"
+        data-size="42px"
+        data-left="-260px"
+        data-top="20px"
+      >Making<br>a login<br>form</ex-cloud>
+      </ex-illustration>
+
+      <ex-code data-code="14" role="listitem">
+        <script class="language-html" type="text/plain">
+          <!DOCTYPE html>
+          <html lang="en">
+            <head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>Login page</title>
+            </head>
+            <body>
+              <h1>Kogin</h1>
+              <form action="/login" method="post">
+                <label for="email">
+                  Email
+                  <input type="email" name="email" placeholder="email@gmail.com" autocomplete="email username">
+                </label>
+                <label for="email">
+                  Password
+                  <input type="password" name="password" placeholder="Eagle" autocomplete="current-password">
+                </label>
+                <button type="button">Login</button>
+              </form>
+            </body>
+          </html>
+        </script>
+      </ex-code>
+
+      <ex-code data-code="38" role="listitem">
+        <script class="language-bash" type="text/plain">
+          git commit -a -m"feat: adds login from"
+        </script>
+      </ex-code>
+
+      <ex-screen
+        data-src="images/commit-1.png"
+        data-alt="List of commits"
+        role="listitem"
+      ></ex-screen>
+
+      <ex-slide
+        role="listitem"
+        data-wide
+      >
+        <pre class="mermaid">
+          gitGraph
+            commit id: "#01" tag: "init"
+            checkout main
+            branch feat/login
+            commit id: "#02" tag: "login"
+        </pre>
+      </ex-slide>
+
+      <ex-slide data-fill-slide data-iframe>
+        <iframe src="./examples/form.html"></iframe>
+      </ex-slide>
+
+      <ex-illustration
+        data-no-page
+        data-restart
+        data-cover
+        data-src="images/mewth-puzzled.gif"
+        data-alt="Meowth"
+        role="listitem"
+      >
+        <ex-cloud
+        data-bgcolor="#eae1ee"
+        data-tail-size="2rem"
+        data-angle="105deg"
+        data-size="48px"
+        data-left="160px"
+        data-top="160px"
+        >Why?</ex-cloud>
+      </ex-illustration>
+
+      <ex-code data-code="32" role="listitem">
+        <script class="language-diff" type="text/plain">
+          -       <button type="button">Login</button>
+          +       <button type="submit">Login</button>
+                </form>
+              </body>
+            </html>
+        </script>
+      </ex-code>
+
+      <ex-screen
+        data-src="images/commit-1-ammend.png"
+        data-alt="List of commits"
+        role="listitem"
+      ></ex-screen>
+
+      <ex-code data-code="56" role="listitem">
+        <script class="language-bash" type="text/plain">
+          git add .
+          git commit -a --amend
+        </script>
+      </ex-code>
+
+      <ex-code data-code="56" role="listitem">
+        <script class="language-bash" type="text/plain">
+          git add -A .
+          git commit --amend
+        </script>
+      </ex-code>
+
+      <ex-slide
+        role="listitem"
+        data-half-v
+        data-half-v-colour
+        data-wide
+      >
+        <pre class="mermaid half-v">
+          gitGraph
+            commit id: "#01" tag: "init"
+            branch feat/login
+            commit id: "#02" tag: "login"
+        </pre>
+        <pre class="mermaid half-v">
+          gitGraph
+            commit id: "#01" tag: "init"
+            branch feat/login
+            commit id: "#03" tag: "login"
+        </pre>
+      </ex-slide>
+
+      <ex-code data-code="14" role="listitem">
+        <script class="language-html" type="text/plain" data-line="10, 11">
+          <!DOCTYPE html>
+          <html lang="en">
+            <head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>Login page</title>
+            </head>
+            <body>
+              <header>
+                <button class="login-form-button" type="button" command="toggle-popover" commandfor="login-form">login</button>
+                <form id="login-form" popover action="/login" method="post">
+                  <label for="email">
+                    Email
+                    <input type="email" name="email" placeholder="email@gmail.com" autocomplete="email username">
+                  </label>
+                  <label for="email">
+                    Password
+                    <input type="password" name="password" placeholder="Eagle" autocomplete="current-password">
+                  </label>
+                  <button type="button">Login</button>
+                </form>
+              </header>
+            </body>
+          </html>
+        </script>
+      </ex-code>
+
+      <ex-slide data-fill-slide data-iframe>
+        <iframe src="./examples/popover.html"></iframe>
+      </ex-slide>
+
+      <ex-code data-code="38" role="listitem">
+        <script class="language-bash" type="text/plain">
+          git add .
+          git commit -m"feat: adds login popover"
+        </script>
+      </ex-code>
+
+      <ex-slide
+        role="listitem"
+        data-wide
+      >
+        <pre class="mermaid">
+          %%{init: { 'gitGraph': {'mainBranchName': 'main'}} }%%
+          gitGraph
+            commit id: "#01" tag: "init"
+            branch feat/login
+            commit id: "#03" tag: "login"
+            commit id: "#04" tag: "popover"
+        </pre>
+      </ex-slide>
+
+      <ex-code data-code="80" role="listitem">
+        <script class="language-bash" type="text/plain">
+          git push
+        </script>
+      </ex-code>
+
+      <ex-screen
+        data-src="images/git-push-fuck.png"
+        data-alt="List of commits"
+        role="listitem"
+      ></ex-screen>
+
+      <ex-code data-code="32" role="listitem">
+        <script class="language-bash" type="text/plain">
+          git push --set-upstream origin feat/login
+        </script>
+      </ex-code>
+
+      <ex-code data-code="32" role="listitem">
+        <script class="language-bash" type="text/plain">
+          git config --global push.autoSetupRemote true
+        </script>
+      </ex-code>
+
+      <ex-screen
+        data-src="images/git-push.png"
+        data-alt="List of commits"
+        role="listitem"
+      ></ex-screen>
+
+      <ex-slide
+        role="listitem"
+        data-wide
+      >
+        <pre class="mermaid">
+          %%{init: { 'gitGraph': {'mainBranchName': 'main'}} }%%
+          gitGraph
+            commit id: "#01" tag: "init"
+            branch feat/login
+            commit id: "#03" tag: "login"
+            commit id: "#04" tag: "popover"
+            branch origin/feat/login
+            checkout origin/feat/login
+            commit id: " "
+        </pre>
+      </ex-slide>
+
+      <ex-illustration
+        data-no-page
+        data-restart
+        data-cover
+        data-src="images/run-scream.gif"
+        data-alt="Meowth"
+        role="listitem"
+      >
+        <ex-cloud
+        data-bgcolor="#eae1ee"
+        data-tail-size="2rem"
+        data-angle="-80deg"
+        data-size="48px"
+        data-left="-280px"
+        data-top="-100px"
+        ><mark>K</mark>ogin?</mark></ex-cloud>
+      </ex-illustration>
+
+      <ex-code data-code="38" role="listitem">
+        <script class="language-diff" type="text/plain">
+          -    <h1>Kogin</h1>
+          +    <h1>Login</h1>
+               <form action="/login" method="post">
+        </script>
+      </ex-code>
+
+      <ex-screen
+        data-src="images/commit-2-diff.png"
+        data-alt="List of commits"
+        role="listitem"
+      ></ex-screen>
+
+      <ex-illustration
+        data-no-page
+        data-restart
+        data-cover
+        data-src="images/amend.gif"
+        data-alt="Meowth"
+        role="listitem"
+      >
+        <ex-cloud
+        data-bgcolor="#eae1ee"
+        data-tail-size="2rem"
+        data-angle="60deg"
+        data-size="24px"
+        data-left="320px"
+        data-top="-120px"
+        >But I can't<br>ammend<br>anymore.</ex-cloud>
+      </ex-illustration>
+
+      <ex-slide
+        role="listitem"
+        data-wide
+      >
+        <pre class="mermaid">
+          gitGraph
+            commit id: "#01" tag: "init"
+            checkout main
+            branch feat/login
+            commit id: "#03" tag: "login"
+            commit id: "#04" tag: "popover"
+        </pre>
+      </ex-slide>
+
+      <ex-code data-code="72" role="listitem">
+        <script class="language-bash" type="text/plain">
+          git log --oneline
+        </script>
+      </ex-code>
+
+      <ex-screen
+        data-src="images/commit-2-git-log.png"
+        data-alt="List of commits"
+        role="listitem"
+      ></ex-screen>
+
+      <ex-code data-code="56" role="listitem">
+        <script class="language-bash" type="text/plain">
+          git commit --fix 14ef75f
+        </script>
+      </ex-code>
+
+      <ex-screen
+        data-src="images/commit-3-git-fix.png"
+        data-alt="List of commits"
+        role="listitem"
+      ></ex-screen>
+
+      <ex-slide
+      role="listitem"
+      data-wide
+    >
+      <pre class="mermaid">
+        gitGraph
+          commit id: "#01" tag: "init"
+          branch feat/login
+          commit id: "#03" tag: "login"
+          commit id: "#04" tag: "popover"
+          commit id: "#05" tag: "fixup"
+      </pre>
+    </ex-slide>
+
+      <ex-code data-code="48" role="listitem">
+        <script class="language-bash" type="text/plain">
+          git rebase --autosquash HEAD~3
+        </script>
+      </ex-code>
+
+      <ex-slide
+        role="listitem"
+        data-wide
+      >
+        <pre class="mermaid">
+          gitGraph
+            commit id: "#01" tag: "init"
+            branch feat/login
+            commit id: "#03" tag: "login"
+            commit id: "#04" tag: "popover"
+            commit id: "#05" tag: "fixup"
+        </pre>
+      </ex-slide>
+
+      <ex-slide
+        role="listitem"
+        data-wide
+      >
+        <pre class="mermaid">
+          gitGraph
+            commit id: "#01" tag: "init"
+            checkout main
+            branch feat/login
+            commit id: "#03" tag: "login"
+            commit id: "#05" tag: "fixup"
+            commit id: "#04" tag: "popover"
+        </pre>
+      </ex-slide>
+
+      <ex-slide
+        role="listitem"
+        data-wide
+      >
+        <pre class="mermaid">
+          gitGraph
+            commit id: "#01" tag: "init"
+            checkout main
+            branch feat/login
+            commit id: "#06" tag: "login"
+            commit id: "#04" tag: "popover"
+        </pre>
+      </ex-slide>
+
+      <ex-screen
+        data-src="images/commit-3-git-rebase.png"
+        data-alt="List of commits"
+        role="listitem"
+      ></ex-screen>
+
+      <ex-code data-code="44" role="listitem">
+        <script class="language-bash" type="text/plain">
+          git rebase --autosquash --root
+        </script>
+      </ex-code>
+
+      <ex-screen
+        data-src="images/commit-3-git-rebase-root.png"
+        data-alt="List of commits"
+        role="listitem"
+      ></ex-screen>
+
+      <ex-code data-code="44" role="listitem">
+        <script class="language-bash" type="text/plain">
+          git rebase -i --autosquash HEAD~3
+        </script>
+      </ex-code>
+
+      <ex-screen
+        data-src="images/commit-3-git-rebase-interactive.png"
+        data-alt="List of commits"
+        role="listitem"
+      ></ex-screen>
+
+      <ex-illustration
+        data-no-page
+        data-restart
+        data-cover
+        data-src="images/lets-push.gif"
+        data-alt="Meowth"
+        role="listitem"
+      >
+        <ex-cloud
+        data-bgcolor="#eae1ee"
+        data-tail-size="2rem"
+        data-angle="60deg"
+        data-size="32px"
+        data-left="40px"
+        data-top="-150px"
+        >Let's go<br>for PR!</ex-cloud>
+      </ex-illustration>
+
+
+      <ex-code data-code="64" role="listitem">
+        <script class="language-bash" type="text/plain">
+          git fetch --all
+        </script>
+      </ex-code>
+
+      <ex-screen
+        data-src="images/git-fetch.png"
+        data-alt="List of commits"
+        role="listitem"
+      ></ex-screen>
+
+      <ex-illustration
+        data-no-page
+        data-restart
+        data-cover
+        data-src="images/psy-duck-run.webp"
+        data-alt="Meowth"
+        role="listitem"
+      >
+      <ex-cloud
+        data-bgcolor="#eae1ee"
+        data-tail-size="2rem"
+        data-angle="80deg"
+        data-size="42px"
+        data-left="300px"
+        data-top="-40px"
+      >Let's add<br>header!</ex-cloud>
+      </ex-illustration>
+
+      <ex-slide
+        role="listitem"
+        data-wide
+      >
+        <pre class="mermaid">
+          gitGraph
+            commit id: "#01" tag: "init"
+            branch "feat/login"
+            checkout main
+            branch "feat/adds-header"
+            checkout "feat/login"
+            commit id: "#06" tag: "login"
+            checkout "feat/adds-header"
+            commit id: "#07" tag: "header"
+            checkout main
+            merge "feat/adds-header"
+            checkout "feat/login"
+            commit id: "#04" tag: "popover"
+        </pre>
+      </ex-slide>
+
+      <ex-code data-code="56" role="listitem">
+        <script class="language-bash" type="text/plain">
+          git rebase origin/main
+        </script>
+      </ex-code>
+
+
+      <ex-slide
+        role="listitem"
+        data-wide
+      >
+        <pre class="mermaid">
+          %%{init: { 'gitGraph': {'mainBranchName': 'origin/main'}} }%%
+          gitGraph
+            commit id: "#01" tag: "init"
+            commit id: "#07" tag: "header"
+            branch feat/login
+            commit id: "#06" tag: "login"
+            commit id: "#04" tag: "popover"
+        </pre>
+      </ex-slide>
+
+      <ex-screen
+        data-src="images/git-rebase-conflict.png"
+        data-alt="List of commits"
+        role="listitem"
+      ></ex-screen>
+
+      <ex-illustration
+        data-no-page
+        data-restart
+        data-cover
+        data-src="images/conflict.gif"
+        data-alt="Conflict"
+        role="listitem"
+      ></ex-illustration>
+
+      <ex-screen
+        data-src="images/conflict-resolve.png"
+        data-alt="List of commits"
+        role="listitem"
+      ></ex-screen>
+
+      <ex-screen
+        data-src="images/conflict-resolved.png"
+        data-alt="List of commits"
+        role="listitem"
+      ></ex-screen>
+
+      <ex-illustration
+        data-no-page
+        data-restart
+        data-cover
+        data-src="images/conflict-resolved.gif"
+        data-alt="Conflict"
+        role="listitem"
+      ></ex-illustration>
+
+      <ex-code data-code="64" role="listitem">
+        <script class="language-bash" type="text/plain">
+          git add .
+          git rebase --continue
+        </script>
+      </ex-code>
+
+      <ex-slide
+        role="listitem"
+        data-wide
+      >
+        <pre class="mermaid">
+          %%{init: { 'gitGraph': {'mainBranchName': 'origin/main'}} }%%
+          gitGraph
+            commit id: "#01" tag: "init"
+            branch origin/feat/login
+            commit id: "#03" tag: "login"
+            commit id: "#04" tag: "popover"
+            checkout origin/main
+            commit id: "#07" tag: "header"
+            branch feat/login
+            commit id: "#08" tag: "login"
+            commit id: " #04" tag: "popover"
+            checkout origin/feat/login
+            merge feat/login type: REVERSE
+        </pre>
+      </ex-slide>
+
+      <ex-code data-code="56" role="listitem">
+        <script class="language-bash" type="text/plain">
+          git push -f
+          git push --force
+          git push --force-with-lease
+        </script>
+      </ex-code>
+
+
+      <ex-code data-code="28" role="listitem">
+        <script class="language-bash" type="text/plain">
+          git config --global alias.fp 'push --force-with-lease'
+          git fp
+        </script>
+      </ex-code>
+
+      <ex-screen
+        data-src="images/git-push-force.png"
+        data-alt="List of commits"
+        role="listitem"
+      ></ex-screen>
+
+      <ex-slide
+        role="listitem"
+        data-wide
+      >
+        <pre class="mermaid">
+          %%{init: { 'gitGraph': {'mainBranchName': 'origin/main'}} }%%
+          gitGraph
+            commit id: "#01" tag: "init"
+            commit id: "#07" tag: "header"
+            branch origin/feat/login
+            commit id: "#08" tag: "login"
+            commit id: "#09" tag: "popover"
+            branch feat/login
+            commit id: " "
+        </pre>
+      </ex-slide>
+
+      <ex-screen
+        data-src="images/from-what.png"
+        data-alt="List of commits"
+        role="listitem"
+      ></ex-screen>
+
+      <ex-illustration
+        data-no-page
+        data-restart
+        data-cover
+        data-src="images/psy-duck-puzzled.gif"
+        data-alt="Meowth"
+        role="listitem"
+      >
+        <ex-cloud
+        data-bgcolor="#eae1ee"
+        data-tail-size="2rem"
+        data-angle="120deg"
+        data-size="56px"
+        data-left="240px"
+        data-top="80px"
+        >From<br>what?</ex-cloud>
+      </ex-illustration>
+
+      <ex-code data-code="64" role="listitem">
+        <script class="language-bash" type="text/plain">
+          git rebase -i --root
+        </script>
+      </ex-code>
+
+      <ex-screen
+        data-src="images/reword-1.png"
+        data-alt="List of commits"
+        role="listitem"
+      ></ex-screen>
+
+      <ex-screen
+        data-src="images/reword-2.png"
+        data-alt="List of commits"
+        role="listitem"
+      ></ex-screen>
+
+      <ex-screen
+        data-src="images/reword-3.png"
+        data-alt="List of commits"
+        role="listitem"
+      ></ex-screen>
+
+      <ex-screen
+        data-src="images/reword-4.png"
+        data-alt="List of commits"
+        role="listitem"
+      ></ex-screen>
+
+      <ex-slide
+        role="listitem"
+        data-wide
+      >
+        <pre class="mermaid">
+          %%{init: { 'gitGraph': {'mainBranchName': 'feat/login'}} }%%
+          gitGraph
+            commit id: "#01" tag: "init"
+            commit id: "#07" tag: "header"
+            commit id: "#10" tag: "login"
+        </pre>
+      </ex-slide>
+
+      <ex-illustration
+        data-no-page
+        data-restart
+        data-cover
+        data-src="images/mewth-guilty.gif"
+        data-alt="Meowth"
+        role="listitem"
+      >
+        <ex-cloud
+        data-bgcolor="#eae1ee"
+        data-tail-size="2rem"
+        data-angle="75deg"
+        data-size="48px"
+        data-left="320px"
+        data-top="100px"
+        >Wasn't<br>there<br>four?</ex-cloud>
+      </ex-illustration>
+
+      <ex-screen
+        data-src="images/reword-1.png"
+        data-alt="List of commits"
+        role="listitem"
+      ></ex-screen>
+
+      <ex-screen
+        data-src="images/reword-2.png"
+        data-alt="List of commits"
+        role="listitem"
+      ></ex-screen>
+
+      <ex-illustration
+        data-no-page
+        data-restart
+        data-cover
+        data-src="images/mewth-shocked.webp"
+        data-alt="Meowth"
+        role="listitem"
+      >
+        <ex-cloud
+        data-bgcolor="#eae1ee"
+        data-tail-size="2rem"
+        data-angle="90deg"
+        data-size="80px"
+        data-left="320px"
+        data-top="100px"
+        >All is<br>lost!</ex-cloud>
+      </ex-illustration>
+
+      <ex-slide
+        role="listitem"
+        data-wide
+      >
+        <pre class="mermaid">
+          %%{init: { 'gitGraph': {'mainBranchName': 'origin/feat/login'}} }%%
+          gitGraph
+            commit id: "#01" tag: "init"
+            commit id: "#07" tag: "header"
+            branch feat/login
+            checkout origin/feat/login
+            commit id: "#08" tag: "login"
+            commit id: "#09" tag: "popover"
+            checkout feat/login
+            commit id: "#10" tag: "login"
+        </pre>
+      </ex-slide>
+
+      <ex-code data-code="80" role="listitem">
+        <script class="language-bash" type="text/plain">
+          git pull -f
+        </script>
+      </ex-code>
+
+      <ex-code data-code="80" role="listitem">
+        <script class="language-bash" type="text/plain">
+          git reflog
+        </script>
+      </ex-code>
+
+      <ex-screen
+        data-src="images/reflog-1.png"
+        data-alt="List of commits"
+        role="listitem"
+      ></ex-screen>
+
+      <ex-code data-code="56" role="listitem">
+        <script class="language-bash" type="text/plain">
+          git reflog | grep popover
+        </script>
+      </ex-code>
+
+      <ex-screen
+        data-src="images/reflog-2.png"
+        data-alt="List of commits"
+        role="listitem"
+      ></ex-screen>
+
+      <ex-code data-code="56" role="listitem">
+        <script class="language-bash" type="text/plain">
+          git reset --hard HEAD@{1}
+          git reset --hard 02d7c10
+          git cherry-pick 02d7c10
+        </script>
+      </ex-code>
+
+      <ex-screen
+        data-src="images/reflog-3.png"
+        data-alt="List of commits"
+        role="listitem"
+      ></ex-screen>
+
+      <ex-slide
+      role="listitem"
+      data-wide
+    >
+      <pre class="mermaid">
+        %%{init: { 'gitGraph': {'mainBranchName': 'feat/login'}} }%%
+        gitGraph
+          checkout feat/login
+          commit id: "#01" tag: "init"
+          branch reflog
+          commit id: "#02" tag: "login"
+          commit id: "#03" tag: "login"
+          commit id: "#04" tag: "popover"
+          commit id: "#05" tag: "fixup"
+          commit id: "#06" tag: "login"
+          checkout feat/login
+          commit id: "#07" tag: "header"
+          checkout reflog
+          commit id: "#08" tag: "login"
+          checkout feat/login
+          commit id: "#10" tag: "login"
+          checkout reflog
+          commit id: "#09" tag: "popover"
+          checkout feat/login
+          cherry-pick id: "#09" tag: "popover"
+      </pre>
+    </ex-slide>
+
+      <ex-code data-code="80" role="listitem">
+        <script class="language-bash" type="text/plain">
+          git push -f
+        </script>
+      </ex-code>
+
+      <ex-illustration
+        data-no-page
+        data-restart
+        data-cover
+        data-src="images/meowth-fun.gif"
+        data-alt="Meowth"
+        role="listitem"
+      >
+      </ex-illustration>
+
+      <ex-illustration
+        data-no-page
+        data-restart
+        data-cover
+        data-src="images/wtf.png"
+        data-alt="Meowth"
+        role="listitem"
+      >
+      </ex-illustration>
+
+      <ex-illustration
+        data-no-page
+        data-restart
+        data-cover
+        data-src="images/wtf-2.png"
+        data-alt="Meowth"
+        role="listitem"
+      >
+      </ex-illustration>
+
+      <ex-illustration
+        data-no-page
+        data-restart
+        data-cover
+        data-src="images/pockedex.png"
+        data-alt="Meowth"
+        role="listitem"
+      >
+      </ex-illustration>
+
+
+      <ex-slide data-size="56px">
+        <h2 class="list-title">Atomic commits</h2>
+        <ul>
+          <li>Contains single, complete,<br>and coherent unit of work</li>
+          <li>Produce history that you can actually<br>understand</li>
+        </ul>
+      </ex-slide>
+
+      <ex-slide data-size="56px">
+        <h2 class="list-title">Atomic commits</h2>
+        <ul>
+          <li>Helps manage risks</li>
+          <li>App is always working</li>
+          <li>Easier to do code review</li>
+        </ul>
+      </ex-slide>
+
+      <ex-illustration
+        data-no-page
+        data-restart
+        data-cover
+        data-src="images/slow-2-1time.gif"
+        data-alt="Meowth"
+        role="listitem"
+      >
+        <ex-cloud
+        data-delay="750ms"
+        data-bgcolor="#eae1ee"
+        data-tail-size=".5rem"
+        data-padding="1rem"
+        data-angle="0deg"
+        data-size="20px"
+        data-left="-310px"
+        data-top="-200px"
+        >&nbsp;&nbsp;This&nbsp;&nbsp;</ex-cloud>
+        <ex-cloud
+        data-delay="2000ms"
+        data-bgcolor="#eae1ee"
+        data-tail-size=".5rem"
+        data-padding="1rem"
+        data-angle="0deg"
+        data-size="20px"
+        data-left="-50px"
+        data-top="-200px"
+        >Means</ex-cloud>
+        <ex-cloud
+        data-delay="3000ms"
+        data-bgcolor="#eae1ee"
+        data-tail-size=".5rem"
+        data-padding="1rem"
+        data-angle="0deg"
+        data-size="20px"
+        data-left="220px"
+        data-top="-200px"
+        >What?</ex-cloud>
+      </ex-illustration>
+
+      <ex-screen
+        data-src="images/multiple-commits.png"
+        data-alt="List of commits"
+        role="listitem"
+      ></ex-screen>
+
+      <ex-screen
+        data-src="images/multiple-commits-2.png"
+        data-alt="List of commits"
+        role="listitem"
+      ></ex-screen>
+
+      <ex-illustration
+        data-no-page
+        data-restart
+        data-cover
+        data-src="images/magnemite.gif"
+        data-alt="Meowth"
+        role="listitem"
+      >
+        <ex-cloud
+          data-bgcolor="#eae1ee"
+          data-tail-size="1rem"
+          data-padding="2rem"
+          data-angle="180deg"
+          data-size="32px"
+          data-left="0px"
+          data-top="200px"
+          >We need<br>just one<br>commit!</ex-cloud>
+        <ex-cloud
+          data-bgcolor="#eae1ee"
+          data-tail-size="1rem"
+          data-padding="2rem"
+          data-angle="55deg"
+          data-size="32px"
+          data-left="180px"
+          data-top="-120px"
+          >With<br>good<br>message</ex-cloud>
+      </ex-illustration>
+
+      <!-- <ex-screen
+        data-src="images/multiple-commits-fixed.png"
+        data-alt="List of commits"
+        role="listitem"
+      ></ex-screen> -->
+
+      <ex-screen
+        data-src="images/multiple-commits-fixed-2.png"
+        data-alt="List of commits"
+        role="listitem"
+      ></ex-screen>
+
+      <ex-illustration
+        data-no-page
+        data-restart
+        data-cover
+        data-src="images/slow.gif"
+        data-alt="Meowth"
+        role="listitem"
+      >
+        <ex-cloud
+          data-bgcolor="#eae1ee"
+          data-tail-size="1rem"
+          data-padding="1rem"
+          data-angle="-90deg"
+          data-size="32px"
+          data-left="320px"
+          data-top="60px"
+          >Squash!</ex-cloud>
+      </ex-illustration>
+
+      <ex-screen
+        data-src="images/squash.png"
+        data-alt="List of commits"
+        role="listitem"
+      ></ex-screen>
+
+      <ex-screen
+        data-src="images/squash-2.png"
+        data-alt="List of commits"
+        role="listitem"
+      ></ex-screen>
+
+      <ex-illustration
+        data-no-page
+        data-restart
+        data-cover
+        data-src="images/pokemon-slowpoke-turn-1time.gif"
+        data-alt="Meowth"
+        role="listitem"
+      >
+        <ex-cloud
+          data-delay="1000ms"
+          data-bgcolor="#eae1ee"
+          data-tail-size=".8rem"
+          data-padding=".75rem"
+          data-angle="30deg"
+          data-size="20px"
+          data-left="-140px"
+          data-top="-120px"
+          >It's</ex-cloud>
+        <ex-cloud
+          data-delay="2000ms"
+          data-bgcolor="#eae1ee"
+          data-tail-size="1rem"
+          data-padding="1rem"
+          data-angle="0deg"
+          data-size="24px"
+          data-left="-400px"
+          data-top="-215px"
+          >Our</ex-cloud>
+        <ex-cloud
+          data-delay="2750ms"
+          data-bgcolor="#eae1ee"
+          data-tail-size="1.2rem"
+          data-padding="1.2rem"
+          data-angle="-40deg"
+          data-size="28px"
+          data-left="300px"
+          data-top="-190px"
+          >Messages</ex-cloud>
+        <ex-cloud
+          data-delay="2750ms"
+          data-bgcolor="#eae1ee"
+          data-tail-size="1.2rem"
+          data-padding="1.2rem"
+          data-angle="0deg"
+          data-size="28px"
+          data-left="110px"
+          data-top="-165px"
+          >&nbsp;&nbsp;!&nbsp;&nbsp;</ex-cloud>
+      </ex-illustration>
+
+      <ex-illustration
+        data-no-page
+        data-restart
+        data-cover
+        data-src="images/magnemite.gif"
+        data-alt="Meowth"
+        role="listitem"
+      >
+        <ex-cloud
+          data-bgcolor="#eae1ee"
+          data-tail-size="1rem"
+          data-padding="1rem"
+          data-angle="-55deg"
+          data-size="32px"
+          data-left="-240px"
+          data-top="-120px"
+          >Write one<br>message.</ex-cloud>
+        <ex-cloud
+          data-bgcolor="#eae1ee"
+          data-tail-size="1rem"
+          data-padding="2rem"
+          data-angle="55deg"
+          data-size="32px"
+          data-left="200px"
+          data-top="-130px"
+          >It's<br>easier!</ex-cloud>
+      </ex-illustration>
+
+      <ex-code data-code="48" role="listitem">
+        <script class="language-bash" type="text/plain">
+          git commit -m "message"
+          git commit --ammend
+          git commit --fixup <commit-hash>
+        </script>
+      </ex-code>
+
+      <ex-illustration
+        data-no-page
+        data-restart
+        data-cover
+        data-src="images/slow-ring.gif"
+        data-alt="Meowth"
+        role="listitem"
+      >
+        <ex-cloud
+          data-bgcolor="#eae1ee"
+          data-tail-size="0rem"
+          data-padding="2.5rem"
+          data-angle="-55deg"
+          data-size="42px"
+          data-left="-15px"
+          data-top="0px"
+          >Untangle<br>features</ex-cloud>
+      </ex-illustration>
+
+      <ex-illustration
+        data-no-page
+        data-restart
+        data-cover
+        data-src="images/magnemite.gif"
+        data-alt="Meowth"
+        role="listitem"
+      >
+        <ex-cloud
+          data-bgcolor="#eae1ee"
+          data-tail-size="1rem"
+          data-padding="2rem"
+          data-angle="55deg"
+          data-size="32px"
+          data-left="260px"
+          data-top="-130px"
+          >Tag<br>release<br>instead!</ex-cloud>
+      </ex-illustration>
+
+      <ex-code data-code="42" role="listitem">
+        <script class="language-bash" type="text/plain">
+          git tag -a v25.6 -m "Release 25.6"
+          git push origin v25.6
+        </script>
+      </ex-code>
+
+      <ex-illustration
+        data-no-page
+        data-restart
+        data-cover
+        data-src="images/or-else.gif"
+        data-alt="Meowth"
+        role="listitem"
+      >
+        <ex-cloud
+          data-bgcolor="#eae1ee"
+          data-tail-size="1rem"
+          data-padding="2.5rem"
+          data-angle="225deg"
+          data-size="80px"
+          data-left="-340px"
+          data-top="120px"
+          style="font-family: monospace; line-height: .8; "
+          >Or☠<br>else</ex-cloud>
+      </ex-illustration>
+
+      <ex-illustration
+        data-no-page
+        data-restart
+        data-cover
+        data-src="images/slow-role-1time.gif"
+        data-alt="Meowth"
+        role="listitem"
+      >
+        <ex-cloud
+          data-delay="6000ms"
+          data-bgcolor="#eae1ee"
+          data-tail-size="1rem"
+          data-padding="2.5rem"
+          data-angle="-55deg"
+          data-size="42px"
+          data-left="0px"
+          data-top="-20px"
+          >OK</ex-cloud>
+      </ex-illustration>
+
+
+      <ex-illustration
+      data-no-page
+      data-restart
+      data-cover
+      data-src="images/slow-line.gif"
+      data-alt="Meowth"
+      role="listitem"
+    >
+      <ex-cloud
+        data-bgcolor="#eae1ee"
+        data-tail-size="1rem"
+        data-padding="1.5rem"
+        data-angle="30deg"
+        data-size="56px"
+        data-left="150px"
+        data-top="-180px"
+        >&nbsp;&nbsp;?&nbsp;&nbsp;</ex-cloud>
+    </ex-illustration>
+
+      <ex-qrcode
+        data-level="1"
+        data-qrcode="git-legit-qr-code.svg"
+        data-link="https://www.youtube.com/watch?v=Qf5LYx5l9Qc"
+        data-label="https://www.youtube.com/watch?v=Qf5LYx5l9Qc"
+      >
+        Git Legit
+      </ex-qrcode>
+
+      <ex-qrcode
+        data-level="3"
+        data-qrcode="bisect-qr-code.svg"
+        data-link="https://www.youtube.com/watch?v=uzog0BTLrYY"
+        data-label="https://www.youtube.com/watch?v=uzog0BTLrYY"
+      >
+        The Business of Bisecting
+      </ex-qrcode>
+
+
+      <ex-qrcode
+        data-level="3"
+        data-qrcode="know-git-1-qr-code.svg"
+        data-link="https://www.youtube.com/watch?v=aolI_Rz0ZqY"
+        data-label="https://www.youtube.com/watch?v=aolI_Rz0ZqY"
+      >
+        So You Think You Know Git? Part 1.
+      </ex-qrcode>
+
+
+      <ex-qrcode
+        data-level="3"
+        data-qrcode="know-git-2-qr-code.svg"
+        data-link="https://www.youtube.com/watch?v=Md44rcw13k4"
+        data-label="https://www.youtube.com/watch?v=Md44rcw13k4"
+      >
+        So You Think You Know Git? Part 2.
+      </ex-qrcode>
+
+      <ex-qrcode
+        data-level="3"
+        data-qrcode="git-filter-repo-qr-code.svg"
+        data-link="https://www.youtube.com/watch?v=KXPmiKfNlZE"
+        data-label="https://www.youtube.com/watch?v=KXPmiKfNlZE"
+      >
+        git-filter-repo for rewriting Git history
+      </ex-qrcode>
+
+      <ex-qrcode
+        data-logotype
+        data-level="2"
+        data-qrcode="come-back-alive-qr.svg"
+        data-link="https://savelife.in.ua/en/donate-en/"
+        data-label="https://savelife.in.ua/"
+      >
+        <img class="donation" src="images/come-back-alive.svg" alt="Come Back Alive Fund">
+      </ex-qrcode>
+
+      <ex-qrcode 
+        data-click
+        data-level="1"
+        data-qrcode="talk-qr-code.svg" 
+        data-link="https://silentimp.github.io/atomic/" 
+        data-label="https://silentimp.github.io/atomic/">
+        Slides
+        <address style="line-height: 2rem;" class="address" slot="details">
+          <p>&nbsp;</p>
+          <p>Anton Nemtsev</p>
+          <p>&nbsp;</p>
+          <p>twitter: <a href="https://twitter.com/silentimp">@silentimp</a></p>
+          <p>email: <a href="mailto:thesilentimp@gmail.com">thesilentimp@gmail.com</a></p>
+        </address>
+      </ex-qrcode>
+
+    </main>
+    <ex-progress></ex-progress>
+    <ex-countdown duration="20" relative></ex-countdown>
+    <script type="module" src="javascript/MessageController.mjs"></script>
+    <script type="module" src="javascript/components/Slide/Slide.mjs"></script>
+    <script type="module" src="javascript/components/Cloud/Cloud.mjs"></script>
+    <script
+      type="module"
+      src="javascript/components/Columns/Columns.mjs"
+    ></script>
+    <script type="module" src="javascript/components/Code/Code.mjs"></script>
+    <script
+      type="module"
+      src="javascript/components/QRCode/QRCode.mjs"
+    ></script>
+    <script
+      type="module"
+      src="javascript/components/Countdown/Countdown.mjs"
+    ></script>
+    <script
+      type="module"
+      src="javascript/components/Illustration/Illustration.mjs"
+    ></script>
+    <script
+      type="module"
+      src="javascript/components/Progress/Progress.mjs"
+    ></script>
+    <script
+      type="module"
+      src="javascript/components/Screenshot/Screenshot.mjs"
+    ></script>
+    <script
+      type="module"
+      src="javascript/components/Mermaid/Mermaid.mjs"
+    ></script>
+    <script type="module" src="javascript/components/Title/Title.mjs"></script>
+    <script type="module" src="javascript/components/Video/Video.mjs"></script>
+    <script type="module" src="javascript/SlideController.mjs"></script>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/baseline-status@1/baseline-status.min.js"
+    ></script>
+    <script src="javascript/image.js" async></script>
+    <script src="javascript/prism.js" data-manual></script>
+
+    <script src="registerServiceWorker.mjs" async></script>
+
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({ startOnLoad: true, logLevel: 3 });
+    </script>
+  </body>
+</html>
